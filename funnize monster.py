@@ -306,7 +306,7 @@ def updateAliens():
     if moveSequence < 10 or moveSequence > 30:
         movex = -15
     if moveSequence == 10 or moveSequence == 30:
-        movey = 40 + (5*level)
+        movey = 20 + (2*level)
         moveDelay -= 1
     if moveSequence >10 and moveSequence < 30:
         movex = 15
