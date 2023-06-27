@@ -226,10 +226,14 @@ def drawLasers():
 
 def checkKeys():
     global player, score
-    if keyboard.left:
-        if player.x > 40: player.x -= 5
-    if keyboard.right:
+    if keyboard.left:                   # Player LEFT
+        if player.x > 40: player.x -= 5 
+    if keyboard.right:                    # Player RIGHT
         if player.x < 760: player.x += 5
+    if keyboard.up:                       # Player UP
+        if player.y > 40: player.y -= 5           
+    if keyboard.down:                     # Player DOWN
+        if player.y > 40: player.y += 5
     if keyboard.space:
         if player.laserActive == 1:
             sounds.gun.play()
